@@ -7,7 +7,7 @@ class MyHandler(http.server.SimpleHTTPRequestHandler):
         self.send_header("Content-type", "text/html")
         self.end_headers()
    
-        html_content = "<html><body><h1>Hello, World!</h1></body></html>"
+        html_content = "<html><body><h1>Hello, World!</h1> update 001 </body></html>"
         self.wfile.write(html_content.encode())
 
 port = 8000
